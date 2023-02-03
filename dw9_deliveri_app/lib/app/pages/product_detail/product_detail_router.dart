@@ -12,6 +12,7 @@ class ProductDetailRouter {
             create: (context) => ProductDetailController(),
           ),
         ],
+        // Essa opção é que o Rodrigo Rahman prefere
         builder: (context, child) {
           final args = ModalRoute.of(context)!.settings.arguments
               as Map<String, dynamic>;
